@@ -273,7 +273,7 @@ CONTAINS
   INTEGER (KIND=JPIM) :: J, LB(${ft.rank}$)
 
   ! assume that dimension all dimensions before AFTER are contiguous...
-
+  ! TODO: Nothing has to be changed here; but LB(i) could be replaced by 1
   LB = LBOUND(PTR)
   IF (AFTER == 0) THEN
     IPREVIOUS_STRIDE = KIND (PTR)
